@@ -10,7 +10,7 @@ function reverseString1(str) {
 const reverseString2 = function (str) {
     let reversedString = ""
     for (let i = 0; i < str.length; i++) {
-        reversedString = str.charAt(i) + reversedString;
+        reversedString = str.charAt(i) + reversedString
     }
     return reversedString
 }
@@ -18,7 +18,7 @@ const reverseString2 = function (str) {
 const reverseString3 = (str) => {
     let reversedString = ''
     for (let ch of str) {
-        reversedString = ch + reversedString;
+        reversedString = ch + reversedString
     }
     return reversedString
 }
@@ -29,13 +29,13 @@ function reverseString4(str) {
 
 const reverseString5 = function (str) {
     if (str === '')
-        return '';
+        return ''
     else
-        return reverseString5(str.substr(1)) + str.charAt(0);
+        return reverseString5(str.substr(1)) + str.charAt(0)
 }
 
 const reverseString6 = (str) => {
-    return (str === '') ? '' : reverseString6(str.substr(1)) + str.charAt(0);
+    return (str === '') ? '' : reverseString6(str.substr(1)) + str.charAt(0)
 }
 
 console.log(reverseString1('abc'))
